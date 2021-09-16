@@ -1,0 +1,40 @@
+.container >div{
+    background-color: rgb(209, 209, 28);
+    text-align: center;
+    padding: 20px;
+
+}
+
+.container{
+    background-color: rgb(210, 216, 223);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+   grid-template-areas: "iconos links links links"
+                        "header header header header"
+                         "imagen imagen main main"
+                         "imagen imagen main main";
+}
+
+.container .item1{
+    grid-area: iconos;
+}
+.container .item2{
+    grid-area: links;
+    background-color: mediumslateblue;
+}
+.container .item3{
+    grid-area: header;
+    background-color: mediumvioletred;
+}
+
+.container .item4{
+    grid-area: imagen;
+    background-color: olivedrab;
+}
+
+.container .item5{
+    grid-area: main;
+    background-color: orange;
+}

@@ -1,3 +1,8 @@
+
+
+/*CAMBIAR EL ICONO DE PESTAÑA A .ICO!!!!*/
+
+
 body{
    font-family: 'Courier New', Courier, monospace;
     background-color: lightgray;}
@@ -12,7 +17,9 @@ article{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-       padding: 50px }
+        align-items: center;
+       padding: 50px 
+    }
     .contenido div{
         width: 450px;}
 
@@ -45,7 +52,7 @@ article{
           text-align: center;
           margin:auto; }
 
-      .header2{height: 30px;
+      .header2{height:10px;
     text-align: center;}  
                                /*ARQUITECTURA Y DISEÑO*/
 

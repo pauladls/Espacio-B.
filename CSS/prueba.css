@@ -1,158 +1,177 @@
+
+/*MAQUETADO CON GRID*/
+.item0{
+    grid-area: iconos;
+}
+
+.item1{
+    grid-area: navLink;
+}
+.item2{
+    grid-area: header;
+}
+
+.item21{
+    grid-area: subti;
+}
+
+.item3{
+    grid-area: main;
+}
+/* .item3.main{
+    display: inline-flex;
+    align-content: center;
+} */
+
+.item4{
+    grid-area: espacio1;
+}
+
+.item5{
+    grid-area: espacio2;
+}
+
+.item6{
+grid-area: footer;
+}
+
+.container{
+    display: grid;
+    background-color: lightgray;
+    grid-template-areas:  "iconos navLink navLink navLink navLink"
+                           " header header header header header"
+                           " subti subti subti subti subti"
+                            "main main main main main"
+                            "footer footer footer footer footer";
+    width: 100vw;
+    height: 100vh;
+                        }   
+                        .container>div{
+                            background-color: lightgray;
+                            padding: 10px;
+                            text-align: center;
+                        }
+/*TERMINA MAQUETADO CON GRID*/
+
+
+
+/*OTROOOO*/
+
+
 body{
- font-family: 'Courier New', Courier, monospace;
-    background-color: white;
-}
-
-nav{
-    margin-left: 100px;
-}
-
-a:link{
-    text-decoration: none;
-    color: black;
-
-}
-
-a:visited{
-    color: black
-
-}
-
-a:hover{
-    color: rgb(221, 188, 158);
-}
-
-/*p::first-letter{
-    font-size: 30px;
-    font-weight: bold;
-}
-*/
-header{
-    width: 1130px;
-    height: 40px;
-    margin-left: 100px;
-    align-content: center;
-    text-align: right;
-    border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    word-spacing: 10px;
-    text-decoration: underline;    
-}
-h1{
-
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 90px;
-}
-
-h2, h3{
- text-align: center;
- color: white;
-}
-
-#articulo1, #articulo2, #form2, #form1, #proyecto1, #proyecto2, #proyecto3, #proyecto4{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 541px;
-    height: 830px;
-    padding: 20px;
-    vertical-align: middle;
-    align-content: center;
-    
-}
-
-article{
-    border: solid;
-    border-color: black;
-    border-width: 20px 20px 20px 20px;
-    background-color: rgb(221, 188, 158);
-    margin: 30px 100px;
-    box-shadow: -20px 20px 20px rgb(131, 130, 130);
-
-    }
-
-    footer{
-        height: 10px;
-        margin: 20px;
-        padding: 10px;
-
-    }
-    #footer2{
-        margin-bottom: 10px;
-        text-align: center;
-        font-weight: bold;
-    
-    }
-#primero{
-    box-sizing: border-box;
-    display: inline-block;
-
-vertical-align: top;
-width: 600px;
-}
-#segundo{
-    box-sizing: border-box;
-    display: inline-block;
-   
-    width: 650px;
-padding-left: 500px;
-text-align: right;
-}
-
-
-/*REGISTRO*/
-#form1{
-    padding: 630px 30px 30px 30px;
-    
-    }
-    
-    #form2{
-        padding: 90px 30px 30px;
-    }
-
-#formulario{
-display: inline-block;
-height: 300px;
-width: 200px;
-}
-
-    fieldset{
-        border:1px solid #070707;
-       
-        margin: 30px;
-        padding-bottom: 30px;
-       
-    }
-    
-    input{
-        border: 1px solid rgb(221, 188, 158);
-      border-radius: 20px;
-      
-      }
-    
-
-input:focus-visible{
-    color: black;
-}
-
-    #input2{
-         color: white;
-      }
-          
-    
-    textarea{
-         border: 1px solid #d9bf96;
-      border-radius: 20px;
-    }
-    
-
-
-    /*PROYECTOS*/
-
-video{
-    padding-left: 50px;
-}
+    background-color: lightgray;}
  
+ article{
+     /* border: solid rgb(221, 188, 158) 10px;*/
+       background-color: white;
+       margin: 0px 100px;
+       box-shadow: -20px 20px 25px rgba(12, 12, 12, 0.7);
+       /* font-size: 2vw; */
+    }
+    
+ 
+       article h2{   /*TITULOS DE LOS ARTICULOS*/
+         font-size: 5vw;
+         font-family: 'Urbanist', sans-serif;  text-align: center;}    
+ 
+         h1{
+           text-align: center;
+           font-size: 7vw;
+        }
+       h3, h4{
+           font-family: 'Urbanist', sans-serif;    text-align: center;}
+ 
+       nav{
+           font-size: 1vw ;
+           word-spacing: 10px;
+           text-decoration: underline rgb(3, 3, 3);
+           text-align: center;   
+           margin-bottom: 5px;}
+
+           #iconos{           /*ICONOS DE LA BARRA DE NAVEGACION */
+               text-align: left;
+               text-decoration: none;
+               margin: 1px;
+               word-spacing: 5px;
+            }      
+            header{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                height: 500px;
+                box-sizing: border-box;
+                 }
+
+                 /*ARQUITECTURA Y DISEÑO*/
+            .header2{
+                /* display: inline-flex; */
+                text-align: center;
+            } 
+            #arq, #y, #diseño{
+                padding: 0px 3px;
+            }
+
+            #arq{
+                color: lightgray;
+                display:inline-block;
+                font-family: 'Urbanist', sans-serif;    text-align: center;
+                margin-top: 10px;
+                font-weight: bold;
+                animation-name: arq;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+        
+            }
+        
+            @keyframes arq{
+                from {color: lightgray;}
+                to {color: black;}
+            }
+            #y{
+                color: lightgray;
+                display:inline-block;
+                font-family: 'Urbanist', sans-serif;    text-align: center;
+                font-weight: bold;
+                animation-name: y;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+        
+            }
+        
+            @keyframes y{
+                from {color: lightgray;}
+                to {color: black;}
+            }
+            #diseño{
+                color: lightgray;
+                display:inline-block;
+                font-family: 'Urbanist', sans-serif;    text-align: center;
+                font-weight: bold;
+                animation-name: diseño;
+                animation-duration: 2s;
+                animation-timing-function:ease-in;
+                animation-delay: 3s;
+                animation-fill-mode: forwards;
+        
+            }
+        
+            @keyframes diseño{
+                from {color: lightgray;}
+                to {color: black;}
+            }
+
+            /*ARQUITECTURA Y DISEÑO*/
+
+            /*PSEUDOCLASES*/
+         
+ p::selection{    background-color: rgb(255, 230, 197);}
+a:link{    text-decoration: none;  color: black;}
+a:visited{    color: black}
+a:hover{color: rgb(184, 148, 113);}
 
  
-
