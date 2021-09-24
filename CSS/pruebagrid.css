@@ -1,40 +1,184 @@
-.container >div{
-    background-color: rgb(209, 209, 28);
-    text-align: center;
-    padding: 20px;
 
+body{
+    /* font-family: 'Urbanist', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
 }
-
 .container{
-    background-color: rgb(210, 216, 223);
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
-   grid-template-areas: "iconos links links links"
-                        "header header header header"
-                         "imagen imagen main main"
-                         "imagen imagen main main";
+display: grid;
+background-color: lightgray;
+/* grid-gap: 0px; */
+grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-rows: 30px 200px 30px 900px 200px 30px;
+grid-template-areas: "iconos  iconos iconos"
+                    "header header header"
+                    "link   link   link"
+                    "imagen   main    main"
+                    "footer  footer   footer"
+                    "pie     pie      pie";
 }
 
+.container>div{
+    /* background-color: lightpink; */
+    /* text-align: center; */
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .item1{background-color: lightgray;     grid-area: iconos;}
+.container .item2{background-color: lightgray;  grid-area: header;}
+.container .item3{background-color: lightgray; grid-area: link;}
+.container .item4{ grid-area: imagen;}
+.container .item5{ grid-area: main;}
+.container .item6{  grid-area: footer;}
+.container .item7{ grid-area: pie;}
+
+/*ICONOS BARRA NAV*/
 .container .item1{
-    grid-area: iconos;
-}
-.container .item2{
-    grid-area: links;
-    background-color: mediumslateblue;
-}
-.container .item3{
-    grid-area: header;
-    background-color: mediumvioletred;
-}
+    justify-content: left;
+    padding-left: 10px;}
+.container .item1 .iconos {
+    word-spacing: 5px;
+    text-align: center;   
+    margin-top: 35px;
+    margin-bottom: 35px;}
+/*ICONOS BARRA NAV*/
 
+/*HEADER*/
+.container .item2 .header{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+            text-align: center;
+        font-size: 50px;}
+.container .item2 .header .subheader{
+            display: flex;
+            transform: translateY(-50px);
+            flex-direction: row;
+            justify-content: center;
+            font-size: 15px;
+        font-weight: bold;}
+            
+        #arq, #y, #diseño{margin: 3px;}
+/*HEADER*/
+ 
+/*LINKS*/
+.container .item3{text-decoration: underline;
+/* padding-bottom: 30px; */
+word-spacing: 20px;}
+/*LINKS*/
+
+/*IMAGENES*/
 .container .item4{
-    grid-area: imagen;
-    background-color: olivedrab;
+    background-color: rgb(255, 255, 255);
+    margin: 46px 0px 46px 20px;
+    display: flex;
+    box-shadow: -15px 15px 10px rgba(131, 131, 131, 0.7);     flex-direction: column;
+    justify-content: space-between;}
+
+    #imagenhome{
+    border: rgb(255, 255, 255) solid 10px;
+margin-bottom: 25px;}
+
+#textohome{
+    margin-top: 25px;
+    margin-left: 2px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 170px;
+    font-size: 20px;
+}
+#imagenquienes{
+    border-radius: 50%;
+    margin-top: 200px;
+
+}
+/*IMAGENES*/
+
+/*MAIN*/
+.container .item5 .main{
+    margin-right: 20px;
+    height: 90%; 
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: -15px 15px 10px rgba(131, 131, 131, 0.7);  */
+}
+.textohome2{
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 20px;  
 }
 
-.container .item5{
-    grid-area: main;
-    background-color: orange;
+.textoquienes{
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 17px;
 }
+/*MAIN*/
+
+/*FOOTER*/
+.container .item6 .pie{
+    display: flex;
+    width: 1300px;
+    flex-direction: row;
+    justify-content: space-between;}
+.box1, .box2{margin: 10px;}
+/*FOOTER*/
+
+h2{
+    font-size: 70px;
+    font-family: 'Urbanist', sans-serif;    text-align: center;}    
+
+
+
+
+
+/*PSEUDOCLASES*/
+p::selection{background-color: rgb(255, 230, 197);}
+a:link{text-decoration: none;  color: black;}
+a:visited{color: black}
+a:hover{color: rgb(187, 161, 136);}
+/*PSEUDOCLASES*/
+
+/*ANIMACION*/
+/* #arq{
+    color: lightgray;
+    display:inline-block;
+    font-family: 'Urbanist', sans-serif;    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    animation-name: arq;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;}
+
+@keyframes arq{from {color: lightgray;}to {color: black;}}
+
+#y{
+    color: lightgray;
+    display:inline-block;
+    font-family: 'Urbanist', sans-serif;    text-align: center;
+    font-weight: bold;
+    animation-name: y;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+@keyframes y{from {color: lightgray;}to {color: black;}}
+
+#diseño{
+    color: lightgray;
+    display:inline-block;
+    font-family: 'Urbanist', sans-serif;    text-align: center;
+    font-weight: bold;
+    animation-name: diseño;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;}
+
+@keyframes diseño{from {color: lightgray;}to {color: black;}} */
+/*ANIMACION*/

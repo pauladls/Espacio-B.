@@ -97,6 +97,42 @@ quiero recibir noticias al mail... acepto los térmminos
 
 
 
+            <main class="main">
+                <article>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre">
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                      <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="date" placeholder="Fecha de nacimiento">
+                        <label for="date">Fecha de nacimiento</label>
+                      </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
+                        <label for="ciudad">Ciudad</label>
+                      </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        <label for="email">E-mail</label>
+                      </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                        <label for="floatingPassword">Contraseña</label>
+                      </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword2" placeholder="Confirme la contraseña">
+                        <label for="floatingPassword2">Confirme la contraseña</label>
+                      </div>
+                
+                </article>
+            </main>
+
+
+
 
 
 
