@@ -13,8 +13,9 @@
 </head>
 
 <body>
-    <div class="container" !important>
-        <div class="item1">            
+    <div class="container">
+        <div class="item1">
+            
             <nav class="iconos">
                 <a href="twiter.com"><i class="fab fa-twitter"></i>
                     <a href="facebook.comm"><i class="fab fa-facebook-square"></i>
@@ -45,17 +46,17 @@
         <div class="item3">
             
             <nav>
-                <a href="index.html">HOME</a> 
+                <a href="pruebagris.html">HOME</a> 
                 <a id="linkquienes" href="Quienes somos.html">QUIENES SOMOS</a>
                 <a href="registro.html">REGISTRO</a>
                 <a href="proyectos.html">PROYECTOS</a>
             </nav>
         </div>
-
         <div class="item4">            
             <main class="main">
-               <article>
-                   <form action="" method="get">
+                <span><h2>REGISTRO</h2></span><br>
+               <article class="artregistro">
+                   <form action="/JS/validacion.php" id="formulario">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="name" placeholder="Nombre">
                         <label for="name">Nombre</label>
@@ -84,6 +85,8 @@
                         <input type="password" class="form-control" id="floatingPassword2" placeholder="Confirme la contraseña">
                         <label for="floatingPassword2">Confirme la contraseña</label>
                       </div>
+                      <input type="bubmit" class="btn btn-outline-secondary" value="Enviar">
+                    
                    </form>
                 </article>
             </main>            
